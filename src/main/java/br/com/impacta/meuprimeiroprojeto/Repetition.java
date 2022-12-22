@@ -19,7 +19,7 @@ public class Repetition {
             }
 
             if (result == target){
-                PositionsArray[index] = index;
+                //PositionsArray[index] = index;
                 System.out.println(index);
             }
         }
