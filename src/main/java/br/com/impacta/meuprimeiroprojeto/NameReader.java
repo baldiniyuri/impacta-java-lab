@@ -10,5 +10,7 @@ public class NameReader {
         String name = reader.nextLine();
 
         System.out.println("Yuri".equals(name));
+
+        reader.close();
     }
 }

@@ -22,31 +22,19 @@ public class Operators {
         return "Odd";
     }
     public boolean Equal (int x, int y){
-        if( x == y){
-            return true;
-        }
-        return false;
+        return x == y;
     }
 
     public boolean NotEqual (int x, int y){
-        if(x != y){
-            return true;
-        }
-        return false;
+        return x != y;
     }
 
     public boolean And (boolean conditionA, boolean conditionB){
-        if (conditionA && conditionB){
-            return true;
-        }
-        return false;
+        return conditionA && conditionB;
     }
 
     public boolean Or (boolean conditionA, boolean conditionB){
-        if (conditionA || conditionB){
-            return true;
-        }
-        return false;
+        return conditionA || conditionB;
     }
 
     public boolean Not (boolean conditionA, boolean conditionB){

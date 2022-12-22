@@ -14,15 +14,18 @@ public class Astrazenica {
     }
 
     public static void RunAstrazenica() {
+        Scanner readerX = new Scanner(System.in);
+
         Astrazenica astrazenica = new Astrazenica();
 
         System.out.println("What is the patient age?");
-        Scanner readerX = new Scanner(System.in);
+
         int age = readerX.nextInt();
 
         String result;
         result = astrazenica.WhichVaccine(age);
         System.out.println(result);
 
+        readerX.close();
     }
 }

@@ -17,13 +17,15 @@ public class Main {
         System.out.println("*           7 for Divisible by 2.            *");
         System.out.println("*           8 for Gol.                       *");
         System.out.println("*           9 for Water Reservoir.           *");
+        System.out.println("*           10 for Repetition.               *");
+        System.out.println("*           0 for terminate program.         *");
         System.out.println("**********************************************");
         int ProgramNumber = ChooseProgram.nextInt();
 
-        boolean runing = true;
-
 
         switch (ProgramNumber) {
+            case 0:
+                System.exit(1);
             case 1:
                 Operators.RunOperatorProgram();
                 break;
@@ -50,6 +52,9 @@ public class Main {
                 break;
             case 9:
                 WaterReservoir.RunWaterReservoir();
+                break;
+            case 10:
+                Repetition.RunRepetition();
                 break;
             default:
                 System.out.println("Invalid program number, select a valid one, ending program.");

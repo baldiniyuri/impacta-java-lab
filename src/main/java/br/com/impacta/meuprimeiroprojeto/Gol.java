@@ -29,6 +29,8 @@ public class Gol {
         result = gol.CheckGoals(teamA, teamB);
         System.out.println(result);
 
+        match.close();
+
 
     }
     

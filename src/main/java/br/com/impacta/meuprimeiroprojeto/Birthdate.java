@@ -12,17 +12,21 @@ public class Birthdate {
     public static void RunBirthdate() {
         Birthdate birthdate = new Birthdate();
 
-        Scanner ChooseProgram = new Scanner(System.in);
+        Scanner DateReader = new Scanner(System.in);
         System.out.println("Enter the day of your Birthdate.");
-        int day = ChooseProgram.nextInt();
+        int day = DateReader.nextInt();
+
         System.out.println("Enter the month of your Birthdate.");
-        int month = ChooseProgram.nextInt();
+        int month = DateReader.nextInt();
+
         System.out.println("Enter the year of your Birthdate.");
-        int year = ChooseProgram.nextInt();
+        int year = DateReader.nextInt();
 
         boolean CheckBirthDate;
         CheckBirthDate = birthdate.CheckDate(day, month, year);
         System.out.println("Birthdate validation is: "+ CheckBirthDate);
+
+        DateReader.close();
     }
 
 }

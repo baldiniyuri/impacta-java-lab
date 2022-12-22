@@ -13,7 +13,6 @@ public class Salary {
     }
 
     public static void RunSalary() {
-        Salary salary = new Salary();
 
         Scanner getSalary = new Scanner(System.in);
         System.out.println("Enter your salary.");
@@ -24,5 +23,7 @@ public class Salary {
         String result;
         result = BudgetVerification(income, spending);
         System.out.println(result);
+
+        getSalary.close();
     }
 }

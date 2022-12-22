@@ -44,6 +44,8 @@ public class WaterReservoir {
 
         String Consumption = waterReservoir.CheckConsumption(TankCapacity, consumption);
         System.out.println(Consumption);
+
+        measurements.close();
     }
 
 }

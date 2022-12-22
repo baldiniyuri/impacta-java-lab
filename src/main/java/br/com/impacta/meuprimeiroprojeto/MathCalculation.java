@@ -12,17 +12,22 @@ public class MathCalculation {
     }
 
     public static void RunMathCalculation() {
-        System.out.println("What is your name?");
         Scanner reader = new Scanner(System.in);
+
+        System.out.println("What is your name?");
         String name = reader.nextLine();
+
         System.out.println("What is the value of x?");
         Scanner readerX = new Scanner(System.in);
+
         int xValue = readerX.nextInt();
+
         System.out.println("What is the value of Multiplication Factor?");
         Scanner readerFactor = new Scanner(System.in);
         int multiFactor = readerFactor.nextInt();
 
         MathCalculation mathCalculation = new MathCalculation();
         mathCalculation.playMath(name, xValue, multiFactor);
+        reader.close();
     }
 }
